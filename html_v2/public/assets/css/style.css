@@ -1,0 +1,22 @@
+.btn-primary{
+    background-color: #1D4781 !important;
+    border :1px solid #2C6BC2 !important;
+}
+.navbar-menu {
+    background: #94c1c0 !important;
+}
+.navbar-nav .nav-link
+{
+    color: #000 !important;
+}
+.navbar-nav .nav-link:hover
+{
+    color: #1D4781 !important;
+}
+.text-primary
+{
+    color: #1D4781  !important;
+}
+.active {
+    color: #fff !important;
+}
