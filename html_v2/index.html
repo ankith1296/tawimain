@@ -43,11 +43,16 @@
 	<header class="header">
 		<div class="header_content d-flex flex-row align-items-center justify-content-start">
 			<!-- <div class="logo"><a href="#">The River</a></div> -->
-			<a href="index.html"> <img class="" src="public/images/Tawi_logo.png" style="height:90px"></a>
+			<a href="index.html"> <img class="" src="public/images/Tawi_logo.png" style="height:6rem"></a>
 			<div class="ml-auto d-flex flex-row align-items-center justify-content-start">
 				<nav class="main_nav">
+                    <ul class="d-flex flex-row align-items-start justify-content-start nav-button-group">
+                        <li><button class="nav-buttons" href="index.html">Tawi</button></li>
+                        <li><button class="nav-buttons" href="index.html">Lush</button></li>
+                        <li><button class="nav-buttons" href="index.html">Yuvaan</button></li>
+                    </ul>
 					<ul class="d-flex flex-row align-items-start justify-content-start">
-						<li><a href="index.html">Home</a></li>
+						
 						<li><a href="about.html">About us</a></li>
 						<li><a href="luxury-experience.html">Luxury Experience</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
@@ -64,6 +69,7 @@
 	<div class="menu trans_400 d-flex flex-column align-items-end justify-content-start">
 		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 		<div class="menu_content">
+
 			<nav class="menu_nav text-right">
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -97,10 +103,16 @@
                                             <div
                                                 class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
                                                 <div
-                                                    class="booking_input_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
-                                                    <div><input type="date"
+                                                    class="booking_input_container d-flex flex-lg-row flex-column align-items-start justify-content-start" ">
+                                                    <div>
+                                                        <div class="booking-input-container-section">
+                                                            <p>Date in</p>
+                                                        <input type="date"
                                                             class=" booking_input booking_input_container booking_in"
+                                                            value="2018-07-22"
                                                             placeholder="Date in" name="from_date"  min="2023-07-06" required required="required"></div>
+                                                        </div>
+                                                        
                                                     <div><input type="date"
                                                             class=" booking_input booking_input_container booking_out"
                                                             placeholder="Date out"name="to_date"  min="2023-07-06" required required="required"></div>
@@ -191,7 +203,7 @@
             <p style="text-align: center; font-size: larger;">
                 A limitless horizon. Teal skies that melt into turquoise waters, and a gentle breeze that cocoons you.
                 Picture the most breath-taking beach
-                you’ve ever stepped foot on, and an impossibly idyllic island that makes for a dream getaway. Maldives,
+                you've ever stepped foot on, and an impossibly idyllic island that makes for a dream getaway. Maldives,
                 officially the Republic of Maldives,
                 is a country in the Indian subcontinent of Asia, situated in the Indian Ocean. It lies Southwest of Sri
                 Lanka and India, about 750 kilometres
@@ -200,6 +212,40 @@
                 the islands comprises 298 square kilometres .
         </div>
     </div>
+
+<!-- Brands -->
+
+<div>
+    <p style="text-align: center; color: #9bc699; font-size:40px;">Our Brands</p>
+    <div class="brand-tawifacilities">
+        <div class="brand-content">
+            <img src="public/images/Tawi_logo.png" />
+            <p style="font-size: 1.2rem;">Driven by passion and expertise to deliver expertly tailored holidays
+                unlike any other.</p>
+                <button>Explore</button>
+        </div>
+    </div>
+    <div class="brand-tawifacilities">
+        <div class="brand-content">
+            <img src="public/images/tawi_lush.png" />
+            <p style="font-size: 1.2rem;">Driven by passion and expertise to deliver expertly tailored holidays
+                unlike any other.</p>
+                <button>Explore</button>
+        </div>
+    </div>
+    <div class="brand-tawifacilities">
+        <div class="brand-content">
+            <img src="public/images/Yuvaan.png" />
+            <img src="public/images/curated_by_lush.png" style="margin:0;" />
+            <p style="font-size: 1.2rem;">Driven by passion and expertise to deliver expertly tailored holidays
+                unlike any other.</p>
+                <button>Explore</button>
+        </div>
+    </div>
+</div>
+
+
+
 
 
     <!-- Gallery -->
