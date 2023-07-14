@@ -26,7 +26,7 @@
 ***********/
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 /*********************************
 2. Body and some general stuff
 *********************************/
@@ -38,6 +38,7 @@
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -236,7 +237,7 @@ section {
   width: 100%;
   height: 100%;
 }
-.background_image {
+.slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -245,7 +246,42 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  /* backgroundsider */
+  animation: changeBackground 24s infinite;
 }
+
+@keyframes changeBackground {
+  0% {
+    background-image: url(/public/images/Hero\ Image.png);
+  }
+  25% {
+    background-image: url(/public/images/Hero\ Image-1.png);
+  }
+  50% {
+    background-image: url(/public/images/Hero\ Image-2.png);
+  }
+  75% {
+    background-image: url(/public/images/Hero\ Image-3.png);
+  }
+  100% {
+    background-image: url(/public/images/Hero\ Image.png);
+  }
+}
+
+/* Preload Images */
+.background:after {
+  content: url(/public/images/Hero\ Image.png)
+    url(/public/images/Hero\ Image-1.png) url(/public/images/Hero\ Image-2.png)
+    url(/public/images/Hero\ Image-3.png);
+  display: none;
+}
+
+.slider h1 {
+  color: #000000;
+  text-align: center;
+  margin-top: 150px; /* Adjust the vertical position of the text */
+}
+
 .nopadding {
   padding: 0px !important;
 }
@@ -579,7 +615,8 @@ section {
   border-radius: 15px;
   padding-left: 27px;
   padding-right: 10px;
-  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 500;
   color: #000000;
   outline: none;
@@ -1184,6 +1221,12 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 1.4rem;
   padding: 1rem;
   border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons:hover {
+  border: 1px solid #9bc699;
+  color: #9bc699;
 }
 
 .nav-button-group {
@@ -1203,42 +1246,416 @@ input[type="number"]::-webkit-outer-spin-button {
   justify-content: flex-start;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
+/* input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
-}
+} */
 
-.brand-tawifacilities {
+/* .brand-tawifacilities {
   display: flex;
-  height: 36rem;
+  height: 28rem;
   width: 100vw;
   margin: 2rem 0.5rem;
   justify-content: flex-end;
   background-color: #000000;
 }
+
+.brand-tawilush {
+  display: flex;
+  height: 28rem;
+  width: 100vw;
+  margin: 2rem 0.5rem;
+  justify-content: flex-start;
+  background-color: #000000;
+}
+
 .brand-content {
   display: flex;
-  padding: 2.5rem;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.brand-content p {
+  margin: 2.75rem 1rem;
+  font-size: 1.125rem;
+  text-align: center;
+  position: relative;
+  right: 2.7rem;
+}
+
+.brand-content img {
+  height: 10rem;
+  position: relative;
+  right: 14.25rem;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.brand-content button {
+  margin-top: 3rem;
+  position: relative;
+  right: 15.6rem;
+  width: 11rem;
+  height: 2.5rem;
+  font-size: 1.125rem;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+} */
+
+.brand-banner-tawifacilities {
+  height: 28rem;
+  width: 100%;
+  margin: 2rem 0rem;
+  background-image: url(/public/images/Tawi\ Fac.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.brand-tawifacilities {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.brand-content img {
-  height: 12rem;
-  aspect-ratio: 3/2;
-  object-fit: contain;
-  margin: 1rem;
+.brand-tawifacilities img {
+  height: 8rem;
+  width: 14rem;
+  margin-top: 4rem;
 }
 
-.brand-content button {
-  margin-top: 3rem;
-  width: 12rem;
-  font-size: 1.4rem;
-  padding: 8px;
-  border-radius: 30px;
+.brand-banner-tawilush {
+  height: 28rem;
+  width: 100%;
+  margin: 2rem 0rem;
+  background-image: url(/public/images/Tawi\ Lush.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
 }
+
+.brand-tawilush {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-tawilush img {
+  height: 8rem;
+  width: 10rem;
+  margin-top: 4rem;
+}
+
+.brand-banner-yuvaan {
+  height: 28rem;
+  width: 100%;
+  margin: 2rem 0rem;
+  background-image: url(/public/images/Yuvaan_banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.brand-yuvaan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.curatedbylush-logo {
+  height: 8rem;
+  width: 6rem;
+  margin-top: 2rem;
+}
+
+.yuvaan-banner-logo {
+  margin-top: 5rem;
+  width: 18rem;
+}
+
+.brand-yuvaan button {
+  margin-top: 3rem;
+}
+
+.brand-content {
+  font-size: 1.125rem;
+  text-align: center;
+  color: #fff;
+
+  margin: 2.5rem;
+}
+
+.brand-explore-button {
+  width: 11rem;
+  height: 2.5rem;
+  font-size: 1.125rem;
+  color: #fff;
+  margin: 5rem 0;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.brand-explore-button:hover {
+  transform: scale(1.1);
+}
+
+/* ####################### New booking ###############  */
+.new-booking-form {
+  width: 60rem;
+  height: 6rem;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  background-color: transparent;
+  display: flex;
+
+  justify-content: space-around;
+  justify-self: center;
+}
+
+.date-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 14rem;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.date-out-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 14rem;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+#new-booking-date-in {
+  /* Set width and height */
+  width: 13rem;
+  height: 2.5rem;
+
+  /* Adjust padding and border */
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+
+  /* Add font styles */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+
+  /* Customize appearance for certain browsers */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Add background and text color */
+  background-color: #f9f9f9;
+  color: #333;
+
+  /* Add hover and focus styles */
+  transition: border-color 0.3s ease-in-out;
+}
+
+#new-booking-date-in:focus {
+  outline: none;
+}
+
+#new-booking-date-out {
+  /* Set width and height */
+  width: 13rem;
+  height: 2.5rem;
+
+  /* Adjust padding and border */
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+
+  /* Add font styles */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+
+  /* Customize appearance for certain browsers */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Add background and text color */
+  background-color: #f9f9f9;
+  color: #333;
+
+  /* Add hover and focus styles */
+  transition: border-color 0.3s ease-in-out;
+}
+
+#new-booking-date-out:focus {
+  outline: none;
+}
+
+.adult-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 5rem;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.child-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 5rem;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+#new-booking-select-adult {
+  /* Set width and height */
+  width: 3.5rem;
+  height: 2.5rem;
+
+  /* Adjust padding and border */
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+
+  /* Add font styles */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 1rem;
+
+  /* Add background and text color */
+  background-color: #ffffff;
+  color: #333;
+
+  /* Customize arrow icon */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+
+  /* Add hover and focus styles */
+  transition: border-color 1s ease-in-out;
+}
+#new-booking-select-adult:focus {
+  outline: none;
+}
+
+#new-booking-select-adult option {
+  background-color: #fff;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.location-select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 10rem;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 5px;
+
+  background-color: #fff;
+}
+
+#new-booking-select-location {
+  /* Set width and height */
+  width: 9rem;
+  height: 2.5rem;
+
+  /* Adjust padding and border */
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+
+  /* Add font styles */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+
+  /* Add background and text color */
+  background-color: #ffffff;
+  color: #000000;
+
+  /* Customize arrow icon */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+
+  /* Add hover and focus styles */
+  transition: border-color 0.3s ease-in-out;
+}
+
+#new-booking-select-location:focus {
+  outline: none;
+}
+
+#new-booking-select-location option {
+  background-color: #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.new-booking-search-button {
+  height: 4.8rem;
+  width: 4rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #9bc699;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.new-booking-search-button:focus {
+  outline: none;
+}
+
+.new-booking-search-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(49, 48, 48, 0.3);
+}
+/* #######################  ###############  */
+
 /* **********************************************************
 **********************
 ********************************************************** */

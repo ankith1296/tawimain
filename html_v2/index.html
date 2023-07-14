@@ -13,6 +13,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Tawi template project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="public/plugins/jquery-datepicker/jquery-ui.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.11.0/dist/css/bootstrap-datepicker.min.css">
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 <link rel="stylesheet" type="text/css" href="public/styles/bootstrap-4.1.2/bootstrap.min.css">
 <link href="public/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="public/plugins/OwlCarousel2-2.3.4/owl.carousel.css">
@@ -20,6 +26,7 @@
 <link rel="stylesheet" type="text/css" href="public/plugins/OwlCarousel2-2.3.4/animate.css">
 <link href="public/plugins/jquery-datepicker/jquery-ui.css" rel="stylesheet" type="text/css">
 <link href="public/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+
 
 
 
@@ -91,14 +98,15 @@
 
 
             <div class="slide">
-                <div class="background_image" style="background-image:url(public/images/Hero_Image.png)"></div>
+                <div class="hero_image_slider" ></div>
                 <div class="home_container">
                     <div class="container">
                         <div class="row">
                             <div class="col">
                                 <div class="home_content text-center">
-                                    <div class="home_title"style="font-family:DM">The Tawi Experience</div>
-                                    <div class="booking_form_container">
+                                    <!-- <div class="home_title"style="font-family:DM">The Tawi Experience</div> -->
+                                    <img src="/public/images/Journey within.png" alt="journey within" style="height:10rem;"/>
+                                    <!-- <div class="booking_form_container">
                                         <form action="http://tawi2.kgninfotech.com/search" method="get" class="booking_form">
                                             <div
                                                 class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
@@ -170,7 +178,59 @@
 
                                             </div>
                                         </form>
-                                    </div>
+                                    </div> -->
+
+<div class="new-booking-form">
+<div class="date-in-form">
+    <p style="padding-left: 9px;">Date In</p>
+    
+    <input type="date" class="form-control" id="new-booking-date-in" value="2023-03-02" placeholder="02/03/2023">
+    <!-- <input type="text" id="datepicker" class="form-control" > -->
+
+    
+</div>
+<div class="date-out-form">
+    <p style="padding-left: 9px;">Date out</p>
+    <input type="date" class="form-control" id="new-booking-date-out" value="2023-03-02" placeholder="02/03/2023">
+</div>
+<div class="adult-form">
+    <p style="padding-left: 9px;">Adult</p>
+    <select class="form-select form-select-sm" id="new-booking-select-adult" aria-label=".form-select-sm example">
+        <option selected>0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+</div>
+<div class="child-form">
+    <p style="padding-left: 9px;">Child</p>
+    <select class="form-select form-select-sm" id="new-booking-select-adult" aria-label=".form-select-sm example">
+        
+        <option selected>0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+</div>
+<div class="location-select">
+    <p style="padding-left: 9px;">Location</p>
+    <select class="form-select form-select-lg mb-3" id="new-booking-select-location" aria-label="Default select example">
+        <option selected>Please Select</option>
+        <option value="1">Cambodia</option>
+        <option value="2">Indonesia</option>
+        <option value="3">Laos</option>
+        <option value="4">Maldives</option>
+        <option value="5">Myanmar</option>
+        <option value="6">Singapore</option>
+        <option value="7">Thailand</option>
+        <option value="8">Vietnam</option>
+      </select>
+</div>
+<button type="submit" class="new-booking-search-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+  </svg></i></button>
+</div>
+
                                 </div>
                             </div>
                         </div>
@@ -217,18 +277,18 @@
 
 <div>
     <p style="text-align: center; color: #9bc699; font-size:40px;">Our Brands</p>
-    <div class="brand-tawifacilities">
+    <!-- <div class="brand-tawifacilities">
         <div class="brand-content">
             <img src="public/images/Tawi_logo.png" />
-            <p style="font-size: 1.2rem;">Driven by passion and expertise to deliver expertly tailored holidays
+            <p >Driven by passion and expertise to deliver expertly tailored holidays<br/> 
                 unlike any other.</p>
                 <button>Explore</button>
         </div>
     </div>
-    <div class="brand-tawifacilities">
+    <div class="brand-tawilush">
         <div class="brand-content">
             <img src="public/images/tawi_lush.png" />
-            <p style="font-size: 1.2rem;">Driven by passion and expertise to deliver expertly tailored holidays
+            <p >Driven by passion and expertise to deliver expertly tailored holidays
                 unlike any other.</p>
                 <button>Explore</button>
         </div>
@@ -237,10 +297,41 @@
         <div class="brand-content">
             <img src="public/images/Yuvaan.png" />
             <img src="public/images/curated_by_lush.png" style="margin:0;" />
-            <p style="font-size: 1.2rem;">Driven by passion and expertise to deliver expertly tailored holidays
+            <p >Driven by passion and expertise to deliver expertly tailored holidays
                 unlike any other.</p>
                 <button>Explore</button>
         </div>
+    </div> -->
+    <div class="brand-banner-tawifacilities">
+        <div class="brand-tawifacilities">
+            <img src="/public/images/Tawi_White.png" alt="tawi facilities" />
+            <p class="brand-content">Driven by passion and expertise to deliver expertly tailored holidays<br/>
+                unlike any other.</p>
+                <button class="brand-explore-button">Explore</button>
+        </div>
+
+    </div>
+
+    <div class="brand-banner-tawilush">
+        <div class="brand-tawifacilities">
+            <img src="/public/images/Lush_White.png" alt="tawi facilities" />
+            <p class="brand-content">Driven by passion and expertise to deliver expertly tailored holidays<br/>
+                unlike any other.</p>
+                <button class="brand-explore-button">Explore</button>
+        </div>
+
+    </div>
+
+
+    <div class="brand-banner-yuvaan">
+        <div class="brand-yuvaan">
+            <img class="yuvaan-banner-logo" src="/public/images/Yuvaan_White.png" alt="tawi facilities"  />
+            <img class="curatedbylush-logo" src="/public/images/urated By Tawi Lush_White.png" alt="tawi facilities" />
+            <p class="brand-content">Driven by passion and expertise to deliver expertly tailored holidays<br/>
+                unlike any other.</p>
+                <button class="brand-explore-button">Explore</button>
+        </div>
+
     </div>
 </div>
 
@@ -437,7 +528,7 @@
 				<!-- All Rights Reserved @ TAWI Facilities 2015–2023.  -->
 
 					<div class="text-center col-md-8">
-						All Rights Reserved @ TAWI Facilities 2015–2023.
+						All Rights Reserved @ TAWI Facilities 2015-2023.
 
 					</div class= "col-md-4" >
 					<div><a href="terms-and-conditions.html" style="color:#fff">Terms & Conditions</a> | <a  style="color:#fff" href="privacy-policy.html">Privacy Policy</a></div>
@@ -484,6 +575,8 @@
         </div>
     </div>
 </div>
+
+
 <script src="public/js/jquery-3.3.1.min.js"></script>
 <script src="public/styles/bootstrap-4.1.2/popper.js"></script>
 <script src="public/styles/bootstrap-4.1.2/bootstrap.min.js"></script>
@@ -499,6 +592,21 @@
 <script src="public/plugins/jquery-datepicker/jquery-ui.js"></script>
 <script src="public/plugins/colorbox/jquery.colorbox-min.js"></script>
 <script src="public/js/custom.js"></script>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.11.0/dist/js/bootstrap-datepicker.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+      $('#datepicker').datepicker();
+    });
+  </script>
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
 </body>
 
 
