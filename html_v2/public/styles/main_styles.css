@@ -330,6 +330,8 @@ section {
   padding-top: 3rem;
   padding-left: 62px;
   padding-right: 62px;
+  display: flex;
+  align-items: center;
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -ms-transition: all 400ms ease;
@@ -1045,6 +1047,15 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 12pt;
   font-family: Abel, sans-serif;
   display: flex;
+  flex-direction: row;
+  margin-right: 2px;
+  justify-content: flex-end;
+}
+
+.bottom_bar2 {
+  font-size: 12pt;
+  font-family: Abel, sans-serif;
+  display: flex;
   margin-right: 2px;
   justify-content: flex-end;
 }
@@ -1072,18 +1083,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .cont-mail {
   color: #9bc699;
-  padding-left: 128px;
+  /* padding-left: 128px; */
   font-size: 15pt;
   font-family: "SF Pro Display", sans-serif;
 }
 .content-mail {
   color: #9bc699;
-  padding-left: 90px;
+  /* padding-left: 90px; */
   font-size: 15pt;
   font-family: "SF Pro Display", sans-serif;
 }
 .cont-number {
-  padding-left: 138px;
+  /* padding-left: 138px; */
   font-size: 15pt;
   font-family: "SF Pro Display", sans-serif;
   padding-top: 40px;
@@ -1358,6 +1369,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-top: 4rem;
 }
 
+.brand-banner-tawilush .brand-explore-button {
+  margin: 3.2rem 0;
+}
+
 .brand-banner-yuvaan {
   height: 28rem;
   width: 100%;
@@ -1392,6 +1407,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-top: 3rem;
 }
 
+.brand-banner-yuvaan .brand-explore-button {
+  margin: 1.2rem 0;
+}
+
 .brand-content {
   font-size: 1.125rem;
   text-align: center;
@@ -1402,10 +1421,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .brand-explore-button {
   width: 11rem;
-  height: 2.5rem;
+  height: 3.4rem;
   font-size: 1.125rem;
   color: #fff;
-  margin: 5rem 0;
+  margin: 4rem 0;
   border: 1px solid #fff;
   border-radius: 30px;
   background-color: transparent;
@@ -1439,6 +1458,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 5px;
   background-color: #fff;
   border-radius: 20px;
+  opacity: 0.8;
 }
 
 .date-out-form {
@@ -1451,6 +1471,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 5px;
   background-color: #fff;
   border-radius: 20px;
+  opacity: 0.8;
 }
 #new-booking-date-in {
   /* Set width and height */
@@ -1478,6 +1499,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   /* Add hover and focus styles */
   transition: border-color 0.3s ease-in-out;
+  opacity: 0.8;
 }
 
 #new-booking-date-in:focus {
@@ -1507,7 +1529,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   /* Add background and text color */
   background-color: #f9f9f9;
   color: #333;
-
+  opacity: 0.8;
   /* Add hover and focus styles */
   transition: border-color 0.3s ease-in-out;
 }
@@ -1526,6 +1548,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 5px;
   background-color: #fff;
   border-radius: 20px;
+  opacity: 0.8;
 }
 .child-form {
   display: flex;
@@ -1537,6 +1560,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 5px;
   border-radius: 20px;
   background-color: #fff;
+  opacity: 0.8;
 }
 
 #new-booking-select-adult {
@@ -1570,6 +1594,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   /* Add hover and focus styles */
   transition: border-color 1s ease-in-out;
+  opacity: 0.8;
 }
 #new-booking-select-adult:focus {
   outline: none;
@@ -1579,6 +1604,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: #fff;
   font-size: 1.2rem;
   padding: 10px;
+  opacity: 0.8;
 }
 
 .location-select {
@@ -1589,7 +1615,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin: 10px;
   border-radius: 20px;
   padding: 5px;
-
+  opacity: 0.8;
   background-color: #fff;
 }
 
@@ -1620,7 +1646,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 20px;
-
+  opacity: 0.8;
   /* Add hover and focus styles */
   transition: border-color 0.3s ease-in-out;
 }
@@ -1633,6 +1659,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: #fff;
   font-size: 1.2rem;
   padding: 5px;
+  opacity: 0.8;
 }
 
 .new-booking-search-button {
@@ -1643,6 +1670,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: none;
   background-color: #9bc699;
   color: #fff;
+
   transition: transform 0.3s;
 }
 
@@ -1654,6 +1682,43 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: scale(0.95);
   box-shadow: 0 2px 4px rgba(49, 48, 48, 0.3);
 }
+
+/* $$$$$$$$$$$$$$FOOTER$$$$$$$$$$$$$$$$$$$$ */
+.follow-us-on-social-media {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.social-media-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 6rem;
+}
+
+.social-media-button-image {
+  height: 1.5rem;
+}
+
+.final-section {
+  display: flex;
+  justify-content: flex-end;
+  height: 3rem;
+  background-color: #015c5c;
+  color: #fff;
+}
+
+.copyright-privacy-policy {
+  color: #fff;
+  width: 57%;
+  display: flex;
+  justify-content: space-between;
+  align-items: ;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 /* #######################  ###############  */
 
 /* **********************************************************
