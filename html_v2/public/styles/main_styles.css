@@ -252,27 +252,28 @@ section {
 
 @keyframes changeBackground {
   0% {
-    background-image: url(/public/images/Hero\ Image.png);
+    background-image: url(/html_v2/public/images/hero_image_0.png);
   }
   25% {
-    background-image: url(/public/images/Hero\ Image-1.png);
+    background-image: url(/html_v2/public/images/Hero\ Image-1.png);
   }
   50% {
-    background-image: url(/public/images/Hero\ Image-2.png);
+    background-image: url(/html_v2/public/images/Hero\ Image-2.png);
   }
   75% {
-    background-image: url(/public/images/Hero\ Image-3.png);
+    background-image: url(/html_v2/public/images/Hero\ Image-3.png);
   }
   100% {
-    background-image: url(/public/images/Hero\ Image.png);
+    background-image: url(/html_v2/public/images/hero_image_0.png);
   }
 }
 
 /* Preload Images */
 .background:after {
-  content: url(/public/images/Hero\ Image.png)
-    url(/public/images/Hero\ Image-1.png) url(/public/images/Hero\ Image-2.png)
-    url(/public/images/Hero\ Image-3.png);
+  content: url(/html_v2/public/images/hero_image_0.png)
+    url(/html_v2/public/images/Hero\ Image-1.png)
+    url(/html_v2/public/images/Hero\ Image-2.png)
+    url(/html_v2/public/images/Hero\ Image-3.png);
   display: none;
 }
 
@@ -1323,7 +1324,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 28rem;
   width: 100%;
   margin: 2rem 0rem;
-  background-image: url(/public/images/Tawi\ Fac.png);
+  background-image: url(/html_v2/public/images/Tawi\ Fac.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1348,7 +1349,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 28rem;
   width: 100%;
   margin: 2rem 0rem;
-  background-image: url(/public/images/Tawi\ Lush.png);
+  background-image: url(/html_v2/public/images/Tawi\ Lush.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1377,7 +1378,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 28rem;
   width: 100%;
   margin: 2rem 0rem;
-  background-image: url(/public/images/Yuvaan_banner.png);
+  background-image: url(/html_v2/public/images/Yuvaan_banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
