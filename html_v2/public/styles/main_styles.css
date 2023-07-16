@@ -252,28 +252,26 @@ section {
 
 @keyframes changeBackground {
   0% {
-    background-image: url(/html_v2/public/images/hero_image_0.png);
+    background-image: url(../images/hero_image_0.png);
   }
   25% {
-    background-image: url(/html_v2/public/images/Hero\ Image-1.png);
+    background-image: url(../images/Hero\ Image-1.png);
   }
   50% {
-    background-image: url(/html_v2/public/images/Hero\ Image-2.png);
+    background-image: url(../images/Hero\ Image-2.png);
   }
   75% {
-    background-image: url(/html_v2/public/images/Hero\ Image-3.png);
+    background-image: url(../images/Hero\ Image-3.png);
   }
   100% {
-    background-image: url(/html_v2/public/images/hero_image_0.png);
+    background-image: url(../images/hero_image_0.png);
   }
 }
 
 /* Preload Images */
 .background:after {
-  content: url(/html_v2/public/images/hero_image_0.png)
-    url(/html_v2/public/images/Hero\ Image-1.png)
-    url(/html_v2/public/images/Hero\ Image-2.png)
-    url(/html_v2/public/images/Hero\ Image-3.png);
+  content: url(../images/hero_image_0.png) url(../images/Hero\ Image-1.png)
+    url(../images/Hero\ Image-2.png) url(..c/images/Hero\ Image-3.png);
   display: none;
 }
 
@@ -368,7 +366,6 @@ section {
   margin-right: 49px;
 }
 .main_nav ul li a {
-  font-size: 1.4rem;
   font-weight: 400;
   color: #ffffff;
 }
@@ -1222,15 +1219,15 @@ input[type="number"]::-webkit-outer-spin-button {
 ********************************************************** */
 
 .nav-buttons {
-  width: 10rem;
-  height: 3rem;
+  width: 7rem;
+  height: 2.5rem;
   border: 1px solid white;
   color: white;
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 20px;
   padding: 1rem;
   border-radius: 30px;
   transition: all 0.3s ease;
@@ -1242,7 +1239,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .nav-button-group {
-  margin-right: 8rem;
+  margin-right: 4rem;
 }
 
 .main_nav {
@@ -1324,7 +1321,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 28rem;
   width: 100%;
   margin: 2rem 0rem;
-  background-image: url(/html_v2/public/images/Tawi\ Fac.png);
+  background-image: url(../images/Tawi\ Fac.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1349,7 +1346,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 28rem;
   width: 100%;
   margin: 2rem 0rem;
-  background-image: url(/html_v2/public/images/Tawi\ Lush.png);
+  background-image: url(../images/Tawi\ Lush.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1378,7 +1375,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 28rem;
   width: 100%;
   margin: 2rem 0rem;
-  background-image: url(/html_v2/public/images/Yuvaan_banner.png);
+  background-image: url(../images/Yuvaan_banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
